@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_login_connection_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb_login_ecnryption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Encryption" />
+
+            <CheckBox
+                android:id="@+id/cb_login_post_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post code to email" />
+
+            <Button
+                android:id="@+id/btn_login_connect_to_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connect to server" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_authorize_connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tie_login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tie_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login_authorize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Authorize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_email_code_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tie_login_email_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email code" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login_send_email_code_to_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send email code" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_login_new_hash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
